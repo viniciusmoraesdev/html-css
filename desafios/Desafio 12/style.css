@@ -52,7 +52,7 @@ h1 {
 #ig {
     height: 100vh;
     background-attachment: fixed;
-    background-position: right center;
+    background-position: center right;
     background-size: cover;
     position: relative;
 }
