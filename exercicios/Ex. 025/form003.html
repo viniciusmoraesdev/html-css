@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+       @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Rock Salt', cursive;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+            
+        }
+
+        div#container {
+            width: 400px;
+            height: 400px;
+            background-image: url('pexels-mikhail-nilov-7664624.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border-radius: 4%;
+            
+        }
+
+        div#container:hover {
+           position: relative;
+           box-shadow: 0px 0px 1000px 1000px rgba(0, 0, 0, 0.918);
+           transition-duration: 1.2s;
+           background-image: url('pexels-mikhail-nilov-7664624.jpg');
+           width: 100vw;
+        }
+
+        div > h1 {
+            text-align: center;
+        }
+
+        div#img {
+            background-image: url('https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        form {
+            opacity: 0.8;
+            font-family: 'Creepster', cursive;
+            font-weight: bolder;
+            font-size: 1em;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="img">
+        <div id="container">
+            <h1>Destiny</h1>
+            <form action="cadastro.php" method="post">
+                <p><label for="iusu">Usuario</label> <input type="text" name="usu" id="iusu" required size="20"></p>
+                <p><label for="isen">Senha <br></label> <input type="password" name="sen" id="isen" required size="10"></p>
+
+                <input type="submit" value="Login"> <br>
+                <input type="reset" value="Limpar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
